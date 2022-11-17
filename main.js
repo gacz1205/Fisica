@@ -5,6 +5,9 @@ var timeT;
 var calculate = document.getElementById('calcu');
 calculate.addEventListener('click', printResults);
 
+
+
+
 function printResults (){
     var d = document.getElementById('dist');
     var distT = (parseInt(d.value));
@@ -32,6 +35,13 @@ function distanceB ()
     distB = distT - distA;
     }
 
+//     function problemText()
+// {
+//     const problemToSolve = document.createElement('p');
+//     problemToSolve.innerText =  "La velocidad del objeto A es de " + veloA + " y la velocidad del objeto B es " + veloB + ", teniendo en cuenta que la distancia total entre los dos objetos es de " + distT + "." + "¿Cual sera el tiempo que tarden los objetos en encontrarse?" + "¿Cuales seran las distancias recorridas por cada uno de los objetos?";
+// }
+
+//     problemText();
     timeTot();
     distanceA();
     distanceB();
