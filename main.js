@@ -1,18 +1,23 @@
-let distT = document.getElementById(dist);
-let veloA = document.getElementById(velA);
-let veloB = document.getElementById(velB);
-let distA;
-let distB;
-let timeT;
+var distA;
+var distB;
+var timeT;
 
-let calculate = document.getElementById(cal);
+var calculate = document.getElementById('calcu');
+calculate.addEventListener('click', printResults);
 
-calculate.addEventListener('click', timeTot);
+function printResults (){
+    var d = document.getElementById('dist');
+    var distT = (parseInt(d.value));
+    var a = document.getElementById('velA');
+    var veloA = (parseInt(a.value));
+    var b = document.getElementById('velB');
+    var veloB = (parseInt(b.value));
 
-function timeTot ()
-{
-   // VA X T + VB X T = DISTT
+    function timeTot ()
+    {
+    // VA X T + VB X T = DISTT
     timeT = distT / (veloA + veloB);
+    }
 
     function distanceA()
     {
@@ -22,16 +27,16 @@ function timeTot ()
     distA = distT - distB;
     }
 
-    function distanceB ()
+function distanceB ()
     {
     distB = distT - distA;
     }
 
-}
+    timeTot();
+    distanceA();
+    distanceB();
 
-function printResults ()
-{
-    console.log("la distancia en A es" + distA);
-    console.log("la distancia en B es" + distB);
-    console.log("El tiempo es" + timeT);
+    console.log("El tiempo en el que se encuentran los objetos es: " + timeT)
+    console.log("La distancia en A es: " + distA)
+    console.log("La distancia en B es: " + distB)
 }
