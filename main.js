@@ -46,7 +46,37 @@ function distanceB ()
     distanceA();
     distanceB();
 
-    console.log("El tiempo en el que se encuentran los objetos es: " + timeT)
-    console.log("La distancia en A es: " + distA)
-    console.log("La distancia en B es: " + distB)
+    console.log("Conociendo que tenemos como la distancia total entre el punto A y B que corresponde a " + distT + ", creamos la siguiente ecuación:") ;
+    console.log("DT = DA + DB, esto se lee como la distancia total es igual a la distancia recorrida por el objeto A sumada a la distancia recorrida por el objeto B") ;
+    console.log("Teniendo en consideración la formula del movimiento rectilineo Uniforme (D = V * T), Procedemos a crear dos ecuaciones, una con la distancia recorrida por el objeto A y una con la distancia recorrida por el punto B");
+    console.log("DA = VA * T");
+    console.log("DB = VB * T");
+    console.log("Reemplazamos los valores en la ecuacion de distancia total");
+    console.log(distT + " = " + "VA * T + VB * T");
+    console.log(distT + " = " + veloA + " * T + "  + veloB + " * T");
+    console.log(distT + " = " + veloA + "T"  + veloB + "T");
+    console.log(distT + " = " + (veloA + veloB) + "T");
+    console.log(distT + "/" + (veloA + veloB) + " = T");
+    console.log(timeT + "= T");
+    console.log("T = " + timeT);
+    console.log("El tiempo en el que se encuentran los objetos es: " + timeT)   
+        
+    console.log("Para calcular la distancia que recorre el objeto A realizamos lo siguiente: " );
+    console.log("Reemplazamos los valores de la ecuación DA = VA * T ");
+    console.log("DA = " + veloA + " * " + timeT);
+    console.log("DA = " + distA);
+
+    console.log("La distancia recorrida por el objeto A es: " + distA);
+
+    console.log("Para calcular la distancia que recorre el objeto B realizamos lo siguiente: " );
+    console.log("Reemplazamos los valores de la ecuación DT = DA + DB ");
+    console.log(distT + " = " + distA + " + DB");
+    console.log(distT + " - " + distA + " = DB");
+    console.log( distB + " = DB");
+
+    console.log("Las respuestas son: ");
+    console.log("T = " + timeT);
+    console.log("DA = " + distA);
+    console.log("DB = " + distB);
+
 }
