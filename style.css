@@ -79,8 +79,23 @@
         padding-left: 420px;
       }
 
-      #problem-solved{
+      #tittle-ts{
         background-color: var(--light-blue);
         color: #000000;
         text-align: justify;
+        padding: 10px;
+      }
+
+      #tittle-ds{
+        background-color: var(--hospital-green);
+        color: #000000;
+        text-align: justify;
+        padding: 10px;
+      }
+
+      #tittle-cs{
+        background-color: rosybrown;
+        color: #000000;
+        text-align: justify;
+        padding: 10px;
       }
