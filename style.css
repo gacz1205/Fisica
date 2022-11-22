@@ -1,6 +1,7 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
+    --dark-blue: #050573;
     --light-blue: #4cc9fe;
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
@@ -27,7 +28,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0 24px;
-        border-bottom: 1px solid var(--light-blue);
+        border-bottom: 1px solid var(--dark-blue);
       }
       .menu {
         display: none;
@@ -53,7 +54,7 @@
       .navbar-left ul li a,
       .navbar-right ul li a {
         text-decoration: none;
-        color: var(--light-blue);
+        color: var(--dark-blue);
         border: 1px solid var(--white);
         padding: 8px;
         border-radius: 8px;
@@ -79,23 +80,23 @@
         padding-left: 420px;
       }
 
-      #tittle-ts{
+      .headings1{
+        background-color: var(--dark-blue);
+        color: #ffffff;
+        text-align: justify;
+        padding: 10px;
+      }
+
+      .headings2{
         background-color: var(--light-blue);
         color: #000000;
         text-align: justify;
         padding: 10px;
       }
 
-      #tittle-ds{
-        background-color: var(--hospital-green);
-        color: #000000;
-        text-align: justify;
-        padding: 10px;
-      }
-
-      #tittle-cs{
-        background-color: rosybrown;
-        color: #000000;
-        text-align: justify;
+      .footer{
+        background-color: var(--dark-blue);
+        color: #ffffff;
+        text-align: right;
         padding: 10px;
       }

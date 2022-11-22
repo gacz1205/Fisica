@@ -53,6 +53,7 @@ function printResults(distT, distA ,distB , timeT, veloA, veloB){
     var solution = document.getElementById("solution");
     
     var data = document.getElementById("datos");
+    var dataTitle = document.getElementById("tittle-data");
     
     var answerTimeTittle = document.getElementById("tittle-ts")
     var answerTime = document.getElementById("time-solved");  
@@ -62,13 +63,19 @@ function printResults(distT, distA ,distB , timeT, veloA, veloB){
 
     var allAnswersTittle = document.getElementById("tittle-cs");
     var allAnswers = document.getElementById("compact-solved");
+  
+
+    dataTitle.innerHTML += ("Datos: ");
     
+    data.innerHTML+=("La distancia total es igual a: " + timeT + "<p>");
+    data.innerHTML+=("La velocidad del objeto A es igual a: " + distA + "<p>");
+    data.innerHTML+=("La velocidad del objeto B es igual a: " + distB + "<p>");
+    
+    // data.innerHTML =+ ("La distancia total es igual a:" + distT + "<p>");
+    // data.innerHTML =+ ("La velocidad del objeto A es igual a:" + veloA + "<p>");
+    // data.innerHTML =+ ("La velocidad del objeto B es igual a:" + veloB + "<p>");
 
-    solution.innerHTML =+ ("Solución: ");
-
-    data.innerHTML =+ ("La distancia total es igual a:" + distT + "<p>");
-    data.innerHTML =+ ("La velocidad del objeto A es igual a:" + veloA + "<p>");
-    data.innerHTML =+ ("Lavelocidad del objeto B es igual a:" + veloB + "<p>");
+    solution.innerHTML+=("Solución");
 
     answerTimeTittle.innerHTML+= ("Calculando el tiempo");
 
