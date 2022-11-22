@@ -87,11 +87,30 @@
         padding: 10px;
       }
 
-      .headings2{
+      .heading-ts{
         background-color: var(--light-blue);
         color: #000000;
         text-align: justify;
         padding: 10px;
+      }
+
+      .heading-ds{
+        background-color: var(--light-blue);
+        color: #000000;
+        text-align: justify;
+        padding: 10px;
+      }
+
+      .heading-cs{
+        background-color: var(--light-blue);
+        color: #000000;
+        text-align: justify;
+        padding: 10px;
+      }
+
+      .time-solution-container{
+        background-color: var(--white);
+        padding: 5px;
       }
 
       .footer{

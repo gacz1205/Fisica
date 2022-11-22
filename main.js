@@ -5,6 +5,16 @@ var timeT;
 var calculate = document.getElementById('calcu');
 calculate.addEventListener('click', evaluateCase);
 
+// const timeBar = document.querySelector('heading-ts');
+
+// const timeContainer = document.querySelector('time-solution-container');
+
+// timeBar.addEventListener('ckick', toogleTimeContainer);
+
+// function toogleTimeContainer()
+// {
+//     timeContainer.classList.add('inactive');
+// }
 
 
 
@@ -50,19 +60,19 @@ function evaluateCase (){
 
 function printResults(distT, distA ,distB , timeT, veloA, veloB){
     
-    var solution = document.getElementById("solution");
+    const solution = document.getElementById("solution");
     
-    var data = document.getElementById("datos");
-    var dataTitle = document.getElementById("tittle-data");
+    const data = document.getElementById("datos");
+    const dataTitle = document.getElementById("tittle-data");
     
-    var answerTimeTittle = document.getElementById("tittle-ts")
-    var answerTime = document.getElementById("time-solved");  
+    const answerTimeTittle = document.getElementById("tittle-ts")
+    const answerTime = document.getElementById("time-solved");  
 
-    var answerDistanceTittle = document.getElementById("tittle-ds");
-    var answerDistance = document.getElementById("distance-solved");
+    const answerDistanceTittle = document.getElementById("tittle-ds");
+    const answerDistance = document.getElementById("distance-solved");
 
-    var allAnswersTittle = document.getElementById("tittle-cs");
-    var allAnswers = document.getElementById("compact-solved");
+    const allAnswersTittle = document.getElementById("tittle-cs");
+    const allAnswers = document.getElementById("compact-solved");
   
 
     dataTitle.innerHTML += ("Datos: ");
