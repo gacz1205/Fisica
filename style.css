@@ -78,3 +78,9 @@
         position: relative;
         padding-left: 420px;
       }
+
+      #problem-solved{
+        background-color: var(--light-blue);
+        color: #000000;
+        text-align: justify;
+      }

@@ -3,12 +3,12 @@ var distB;
 var timeT;
 
 var calculate = document.getElementById('calcu');
-calculate.addEventListener('click', printResults);
+calculate.addEventListener('click', evaluateCase);
 
 
 
 
-function printResults (){
+function evaluateCase (){
     var d = document.getElementById('dist');
     var distT = (parseInt(d.value));
     var a = document.getElementById('velA');
@@ -30,53 +30,59 @@ function printResults (){
     distA = distT - distB;
     }
 
-function distanceB ()
+    function distanceB ()
     {
     distB = distT - distA;
     }
 
-//     function problemText()
-// {
-//     const problemToSolve = document.createElement('p');
-//     problemToSolve.innerText =  "La velocidad del objeto A es de " + veloA + " y la velocidad del objeto B es " + veloB + ", teniendo en cuenta que la distancia total entre los dos objetos es de " + distT + "." + "¿Cual sera el tiempo que tarden los objetos en encontrarse?" + "¿Cuales seran las distancias recorridas por cada uno de los objetos?";
-// }
-
-//     problemText();
     timeTot();
     distanceA();
     distanceB();
 
-    console.log("Conociendo que tenemos como la distancia total entre el punto A y B que corresponde a " + distT + ", creamos la siguiente ecuación:") ;
-    console.log("DT = DA + DB, esto se lee como la distancia total es igual a la distancia recorrida por el objeto A sumada a la distancia recorrida por el objeto B") ;
-    console.log("Teniendo en consideración la formula del movimiento rectilineo Uniforme (D = V * T), Procedemos a crear dos ecuaciones, una con la distancia recorrida por el objeto A y una con la distancia recorrida por el punto B");
-    console.log("DA = VA * T");
-    console.log("DB = VB * T");
-    console.log("Reemplazamos los valores en la ecuacion de distancia total");
-    console.log(distT + " = " + "VA * T + VB * T");
-    console.log(distT + " = " + veloA + " * T + "  + veloB + " * T");
-    console.log(distT + " = " + veloA + "T"  + veloB + "T");
-    console.log(distT + " = " + (veloA + veloB) + "T");
-    console.log(distT + "/" + (veloA + veloB) + " = T");
-    console.log(timeT + "= T");
-    console.log("T = " + timeT);
-    console.log("El tiempo en el que se encuentran los objetos es: " + timeT)   
-        
-    console.log("Para calcular la distancia que recorre el objeto A realizamos lo siguiente: " );
-    console.log("Reemplazamos los valores de la ecuación DA = VA * T ");
-    console.log("DA = " + veloA + " * " + timeT);
-    console.log("DA = " + distA);
+    timeT = timeT.toFixed(2);
+    distA = distA.toFixed(2);
+    distB = distB.toFixed(2);
 
-    console.log("La distancia recorrida por el objeto A es: " + distA);
+    printResults(distT, distA ,distB , timeT, veloA, veloB);
 
-    console.log("Para calcular la distancia que recorre el objeto B realizamos lo siguiente: " );
-    console.log("Reemplazamos los valores de la ecuación DT = DA + DB ");
-    console.log(distT + " = " + distA + " + DB");
-    console.log(distT + " - " + distA + " = DB");
-    console.log( distB + " = DB");
+    
+}
 
-    console.log("Las respuestas son: ");
-    console.log("T = " + timeT);
-    console.log("DA = " + distA);
-    console.log("DB = " + distB);
+function printResults(distT, distA ,distB , timeT, veloA, veloB){
+    
+    var respuesta = document.getElementById("problem-solved")
+
+    respuesta.innerHTML+=("Conociendo que tenemos como la distancia total entre el punto A y B que corresponde a " + distT + ", creamos la siguiente ecuación:" + "</p>") ;
+    respuesta.innerHTML+=("DT = DA + DB, esto se lee como la distancia total es igual a la distancia recorrida por el objeto A sumada a la distancia recorrida por el objeto B" + "</br>") ;
+    respuesta.innerHTML+=("Teniendo en consideración la formula del movimiento rectilineo Uniforme (D = V * T), Procedemos a crear dos ecuaciones, una con la distancia recorrida por el objeto A y una con la distancia recorrida por el punto B" + "</p>");
+    respuesta.innerHTML+=("DA = VA * T" + "</p>");
+    respuesta.innerHTML+=("DB = VB * T" + "</p>");
+    respuesta.innerHTML+=("Reemplazamos los valores en la ecuacion de distancia total" + "</p>");
+    respuesta.innerHTML+=(distT + " = " + "VA * T + VB * T" + "</p>");
+    respuesta.innerHTML+=(distT + " = " + veloA + " * T + "  + veloB + " * T" + "</p>");
+    respuesta.innerHTML+=(distT + " = " + veloA + "T"  + veloB + "T" + "</p>");
+    respuesta.innerHTML+=(distT + " = " + (veloA + veloB) + "T" + "</p>");
+    respuesta.innerHTML+=(distT + "/" + (veloA + veloB) + " = T" + "</p>");
+    respuesta.innerHTML+=(timeT + "= T" + "</p>");
+    respuesta.innerHTML+=("T = " + timeT + "</p>");
+    respuesta.innerHTML+=("El tiempo en el que se encuentran los objetos es: " + timeT + "</p>")   
+
+    respuesta.innerHTML+=("Para calcular la distancia que recorre el objeto A realizamos lo siguiente: "  + "</p>");
+    respuesta.innerHTML+=("Reemplazamos los valores de la ecuación DA = VA * T " + "</p>");
+    respuesta.innerHTML+=("DA = " + veloA + " * " + timeT + "</p>");
+    respuesta.innerHTML+=("DA = " + distA + "</p>");
+
+    respuesta.innerHTML+=("La distancia recorrida por el objeto A es: " + distA) + "</p>";
+
+    respuesta.innerHTML+=("Para calcular la distancia que recorre el objeto B realizamos lo siguiente: "  + "</p>");
+    respuesta.innerHTML+=("Reemplazamos los valores de la ecuación DT = DA + DB " + "</p>");
+    respuesta.innerHTML+=(distT + " = " + distA + " + DB" + "</p>");
+    respuesta.innerHTML+=(distT + " - " + distA + " = DB" + "</p>");
+    respuesta.innerHTML+=( distB + " = DB" + "</p>");
+
+    respuesta.innerHTML+=("Las respuestas son: " + "</p>");
+    respuesta.innerHTML+=("T = " + timeT + "</p>");
+    respuesta.innerHTML+=("DA = " + distA + "</p>");
+    respuesta.innerHTML+=("DB = " + distB + "</p>");
 
 }
