@@ -19,6 +19,7 @@ calculate.addEventListener('click', evaluateCase);
 
 
 function evaluateCase (){
+    
     var d = document.getElementById('dist');
     var distT = (parseInt(d.value));
     var a = document.getElementById('velA');
@@ -59,7 +60,7 @@ function evaluateCase (){
 }
 
 function printResults(distT, distA ,distB , timeT, veloA, veloB){
-    
+
     const solution = document.getElementById("solution");
     
     const data = document.getElementById("datos");
@@ -125,4 +126,18 @@ function printResults(distT, distA ,distB , timeT, veloA, veloB){
     allAnswers.innerHTML+=("T = " + timeT + "</p>");
     allAnswers.innerHTML+=("DA = " + distA + "</p>");
     allAnswers.innerHTML+=("DB = " + distB + "</p>");
+
+    
 }
+
+// function clearWorkSpace()
+// {
+//     data.innerHTML ="";
+//     solution.innerHTML="";
+//     answerTimeTittle.innerHTML="";
+//     answerTime.innerHTML="";
+//     answerDistanceTittle.innerHTML="";
+//     answerDistance.innerHTML="";
+//     allAnswersTittle.innerHTML="";
+//     allAnswers.innerHTML="";
+// }
