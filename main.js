@@ -126,7 +126,6 @@ function printResults(distT, distA ,distB , timeT, veloA, veloB){
     allAnswers.innerHTML+=("T = " + timeT + "</p>");
     allAnswers.innerHTML+=("DA = " + distA + "</p>");
     allAnswers.innerHTML+=("DB = " + distB + "</p>");
-
     
 }
 
