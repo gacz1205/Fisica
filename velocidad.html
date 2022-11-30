@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style-distancia.css">
+    <link rel="stylesheet" href="./style-speed.css">
 
-    <title>MRU Distancia</title>
+    <title>MRU Velocidad</title>
 </head>
 <body>
     <nav>
@@ -38,7 +38,7 @@
     </nav>
     <section class="main-container">
         <h1 class="titulo">Movimiento rectilíneo Uniforme (MRU)</h1>
-        <h2>Distancia</h2>
+        <h2>Velocidad</h2>
         <p class="descripcion">Esta calculadora esta diseñada para encontrar la respuesta a problemas en donde conocemos la velocidad de un objeto y el tiempo en el que recorre una distancia desconocida.</p>
 
         <div class="graphic">
@@ -46,8 +46,8 @@
         </div>
 
         <h2>Ingresar datos</h2>
-        <p>Ingresar la velocidad del objeto <input type="text" id="speed" class="input-container"></p>
-        <p>Ingresar el tiempo que recorre el objeto <input type="text" id="time"class="input-container"></p>
+        <p>Ingresar la distancia recorrida por el objeto <input type="text" id="speed" class="input-container"></p>
+        <p>Ingresar el tiempo que transcurre mientras el objetos esta en moviemiento <input type="text" id="time"class="input-container"></p>
         <button id ="calcu" class="buttonSend">Calcular</button>
         
         
@@ -56,14 +56,14 @@
 
         <h1 id ="solution" class="headings1"></h1>      
 
-        <h2 id="tittle-ds" class="heading-ds"></h2>
-        <p id="distance-solved" class="distance-solution-container"> </p>
+        <h2 id="tittle-sp" class="heading-sp"></h2>
+        <p id="speed-solved" class="distance-solution-container"> </p>
 
         <h2 id="tittle-cs" class="heading-cs"></h2>
         <p id="compact-solved" class="compact-solution-container"></p>
 
     </section>
-   <script src="./distancia.js"></script> 
+   <script src="./velocidad.js"></script> 
 </body>
 
 <footer class="footer">This belongs to GC, Copywright 2022</footer>
