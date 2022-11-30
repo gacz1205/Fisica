@@ -74,45 +74,7 @@
         margin-left: 20px;
         width: 50px;
       }
-
-      .graphic{
-        position: relative;
-        padding-left: 420px;
-      }
-
-      .headings1{
-        background-color: var(--dark-blue);
-        color: #ffffff;
-        text-align: justify;
-        /* padding: 10px; */
-      }
-
-      .heading-ts{
-        background-color: var(--light-blue);
-        color: #000000;
-        text-align: justify;
-        /* padding: 10px; */
-      }
-
-      .heading-ds{
-        background-color: var(--light-blue);
-        color: #000000;
-        text-align: justify;
-        /* padding: 10px; */
-      }
-
-      .heading-cs{
-        background-color: var(--light-blue);
-        color: #000000;
-        text-align: justify;
-        /* padding: 10px; */
-      }
-
-      .time-solution-container{
-        background-color: var(--white);
-        /* padding: 5px; */
-      }
-
+      
       .footer{
         background-color: var(--dark-blue);
         color: #ffffff;
