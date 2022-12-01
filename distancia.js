@@ -6,10 +6,10 @@ calculate.addEventListener('click', evaluateCase);
 function evaluateCase(){
 
     var sp = document.getElementById('speed');
-    var speed = (parseInt(sp.value)); 
+    var speed = (parseFloat(sp.value)); 
 
     var tm = document.getElementById('time');
-    var time = (parseInt(tm.value))
+    var time = (parseFloat(tm.value))
 
     function evaluateDistance(){
        
@@ -35,8 +35,8 @@ function printResults(dist, speed, time){
     const answerDistanceTittle = document.getElementById("tittle-ds");
     const answerDistance = document.getElementById("distance-solved");
 
-    const allAnswersTittle = document.getElementById("tittle-cs");
-    const allAnswers = document.getElementById("compact-solved");
+    const allAnswersTittle = document.getElementById("tittle-aa");
+    const allAnswers = document.getElementById("all-answers-solved");
 
     dataTitle.innerHTML += ("Datos: ");
     

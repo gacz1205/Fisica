@@ -87,6 +87,13 @@
         /* padding: 10px; */
       }
 
+      .headings2{
+        background-color: var(--semi-dark-blue);
+        color: #ffffff;
+        text-align: justify;
+        /* padding: 10px; */
+      }
+
       .heading-tm{
         background-color: var(--light-blue);
         color: #000000;
@@ -94,14 +101,7 @@
         /* padding: 10px; */
       }
 
-      .heading-sp{
-        background-color: var(--light-blue);
-        color: #000000;
-        text-align: justify;
-        /* padding: 10px; */
-      }
-
-      .heading-cs{
+      .heading-aa{
         background-color: var(--light-blue);
         color: #000000;
         text-align: justify;

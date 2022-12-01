@@ -3,6 +3,7 @@
     --black: #000000;
     --dark-blue: #050573;
     --light-blue: #4cc9fe;
+    --semi-dark-blue: rgb(62, 68, 185);
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
     --sm: 14px;
@@ -87,9 +88,9 @@
         /* padding: 10px; */
       }
 
-      .heading-ts{
-        background-color: var(--light-blue);
-        color: #000000;
+      .headings2{
+        background-color: var(--semi-dark-blue);
+        color: #ffffff;
         text-align: justify;
         /* padding: 10px; */
       }
@@ -99,16 +100,16 @@
         color: #000000;
         text-align: justify;
         /* padding: 10px; */
-      }
+      } 
 
-      .heading-cs{
+      .heading-aa{
         background-color: var(--light-blue);
         color: #000000;
         text-align: justify;
         /* padding: 10px; */
       }
 
-      .time-solution-container{
+      .speed-solution-container{
         background-color: var(--white);
         /* padding: 5px; */
       }

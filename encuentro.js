@@ -21,17 +21,17 @@ calculate.addEventListener('click', evaluateCase);
 function evaluateCase (){
     
     var d = document.getElementById('dist');
-    var distT = (parseInt(d.value));
+    var distT = (parseFloat(d.value));
     var a = document.getElementById('velA');
-    var veloA = (parseInt(a.value));
+    var veloA = (parseFloat(a.value));
     var b = document.getElementById('velB');
-    var veloB = (parseInt(b.value));
+    var veloB = (parseFloat(b.value));
 
     function timeTot ()
     {
     // VA X T + VB X T = DISTT
     timeT = distT / (veloA + veloB);
-    }
+    } 
 
     function distanceA()
     {
@@ -72,15 +72,15 @@ function printResults(distT, distA ,distB , timeT, veloA, veloB){
     const answerDistanceTittle = document.getElementById("tittle-ds");
     const answerDistance = document.getElementById("distance-solved");
 
-    const allAnswersTittle = document.getElementById("tittle-cs");
-    const allAnswers = document.getElementById("compact-solved");
+    const allAnswersTittle = document.getElementById("tittle-aa");
+    const allAnswers = document.getElementById("all-answers-solved");
   
 
     dataTitle.innerHTML += ("Datos: ");
     
-    data.innerHTML+=("La distancia total es igual a: " + timeT + "<p>");
-    data.innerHTML+=("La velocidad del objeto A es igual a: " + distA + "<p>");
-    data.innerHTML+=("La velocidad del objeto B es igual a: " + distB + "<p>");
+    data.innerHTML+=("dt = " + distT + "<p>");
+    data.innerHTML+=("Va = " + veloA + "<p>");
+    data.innerHTML+=("Vb = " + veloB + "<p>");
     
     // data.innerHTML =+ ("La distancia total es igual a:" + distT + "<p>");
     // data.innerHTML =+ ("La velocidad del objeto A es igual a:" + veloA + "<p>");
@@ -95,13 +95,13 @@ function printResults(distT, distA ,distB , timeT, veloA, veloB){
     answerTime.innerHTML+=("Teniendo en consideración la formula del movimiento rectilineo Uniforme (D = V * T), Procedemos a crear dos ecuaciones, a distancia recorrida por el objeto A y una con la distancia recorrida por el punto B" + "</p>");
     answerTime.innerHTML+=("DA = VA * T" + "</p>");
     answerTime.innerHTML+=("DB = VB * T" + "</p>");
-    answerTime.innerHTML+=("Reemplazamos los valores en la ecuacion de distancia total" + "</p>");
+    answerTime.innerHTML+=("Reemplazamos los valores en la ecuacion de distancia total (DT = DA + DB)" + "</p>");
     answerTime.innerHTML+=(distT + " = " + "VA * T + VB * T" + "</p>");
     answerTime.innerHTML+=(distT + " = " + veloA + " * T + "  + veloB + " * T" + "</p>");
-    answerTime.innerHTML+=(distT + " = " + veloA + "T"  + veloB + "T" + "</p>");
+    answerTime.innerHTML+=(distT + " = " + veloA + "T"  + " + " + veloB + "T" + "</p>");
     answerTime.innerHTML+=(distT + " = " + (veloA + veloB) + "T" + "</p>");
     answerTime.innerHTML+=(distT + "/" + (veloA + veloB) + " = T" + "</p>");
-    answerTime.innerHTML+=(timeT + "= T" + "</p>");
+    answerTime.innerHTML+=(timeT + " = T" + "</p>");
     answerTime.innerHTML+=("T = " + timeT + "</p>");
     answerTime.innerHTML+=("El tiempo en el que se encuentran los objetos es: " + timeT + "</p>")   
 
@@ -118,6 +118,7 @@ function printResults(distT, distA ,distB , timeT, veloA, veloB){
     answerDistance.innerHTML+=(distT + " = " + distA + " + DB" + "</p>");
     answerDistance.innerHTML+=(distT + " - " + distA + " = DB" + "</p>");
     answerDistance.innerHTML+=( distB + " = DB" + "</p>");
+    answerDistance.innerHTML+=( "DB = " + distB + "</p>");
 
 
     allAnswersTittle.innerHTML+= ("En resumen estas son las respuestas: ")

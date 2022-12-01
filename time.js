@@ -35,8 +35,8 @@ function printResults(dist, speed, time){
     const answerTimeTittle = document.getElementById("tittle-tm");
     const answerTime = document.getElementById("time-solved");
 
-    const allAnswersTittle = document.getElementById("tittle-cs");
-    const allAnswers = document.getElementById("compact-solved");
+    const allAnswersTittle = document.getElementById("tittle-aa");
+    const allAnswers = document.getElementById("all-answers-solved");
 
     dataTitle.innerHTML += ("Datos: ");
     

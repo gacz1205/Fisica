@@ -35,13 +35,13 @@ function printResults(dist, speed, time){
     const answerSpeedTittle = document.getElementById("tittle-sp");
     const answerSpeed = document.getElementById("speed-solved");
 
-    const allAnswersTittle = document.getElementById("tittle-cs");
-    const allAnswers = document.getElementById("compact-solved");
+    const allAnswersTittle = document.getElementById("tittle-aa");
+    const allAnswers = document.getElementById("all-answers-solved");
 
     dataTitle.innerHTML += ("Datos: ");
     
-    data.innerHTML+=("La distancia recorrida por el objeto es igual a: " + dist + "<p>");
-    data.innerHTML+=("El tiempo recorrido por el objeto para recorrer esa distancia es igual a: " + time + "<p>");
+    data.innerHTML+=("d = " + dist + "<p>");
+    data.innerHTML+=("t = " + time + "<p>");
     
     // data.innerHTML =+ ("La distancia total es igual a:" + distT + "<p>");
     // data.innerHTML =+ ("La velocidad del objeto A es igual a:" + veloA + "<p>");
