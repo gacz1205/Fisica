@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./alcance-style.css">
+
+    <title>MRU resolución de ejercicios</title>
+</head>
+<body>
+    <nav>
+        <img src="" alt="Mono" class="menu">
+        
+        <div class="navbar-left">
+            <img src="./logo_mono.jpg" alt="logo_mono" class="logo">
+            <ul>
+                <li>
+                <a href="./index.html">Inicio</a>
+                </li>  
+                 <li>
+                  <a href="./distancia.html">Distancia</a>
+                </li>
+                <li>
+                  <a href="./velocidad.html">Velocidad</a>
+                </li>
+                <li>
+                  <a href="./time.html">Tiempo</a>
+                </li>
+                <li>
+                  <a href="./encuentro.html">Punto de encuentro</a>
+                </li>
+                <li>
+                  <a href="./alcance.html">Alcance</a>
+                </li>
+              </ul>
+            </div>
+    </nav>
+    <section class="main-container">
+        <h1 class="titulo">Movimiento rectilíneo Uniforme (MRU)</h1>
+        <h2>Punto de encuentro</h2>
+        <p class="descripcion">Esta calculadora esta diseñada para encontrar la respuesta a problemas de alcance en MRU, en donde dos objetos intervienen, teniendo en cuenta que el objeto A parte primero y luego de un intervalo del tiempo el objeto B parte desde el mismo punto, así mismo las velocidades de cada uno de los objetos son diferentes y considerando que el objeto B tiene una mayor velocidad. </p>
+
+        <div class="graphic">
+            <img src="./alcance.png" alt="Dibujo de MRU punto de encuentro">
+        </div>
+
+        <h2>Ingresar datos</h2>
+        <p>Ingresar la diferencia de tiempo con la que parten el objeto A del B <input type="text" id="tAdicional" class="input-container"></p>
+        <p>Ingresar Velocidad del objeto A <input type="text" id="velA" class="input-container"></p>
+        <p>Ingresar Velocidad del objeto B <input type="text" id="velB"class="input-container"></p>
+        <button id ="calcu" class="buttonSend">Calcular</button>
+        
+        
+        <h2 id="tittle-data" class="headings2"></h2>
+        <p id="datos" class="data-container"></p>
+
+        <h1 id ="solution" class="headings1"></h1>      
+
+        <h2 id="tittle-ds" class="heading-ds"></h2>
+        <p id="distance-solved" class="distance-solution-container"> </p>
+
+        <h2 id="tittle-ts" class="heading-ts"></h2>
+        <p id="time-solved" class="time-solution-container"></p>
+
+        <h2 id="tittle-aa" class="heading-aa"></h2>
+        <p id="all-answers-solved" class="all-answers-solution-container"></p>
+
+    </section>
+   <script src="./alcance.js"></script> 
+</body>
+
+<footer class="footer">This belongs to GC, Copywright 2022</footer>
+</html>
