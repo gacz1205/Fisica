@@ -5,11 +5,13 @@
     --light-blue: #4cc9fe;
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
+    --semi-dark-blue: rgb(62, 68, 185);
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
     }
     body {
+        width: 100%;
         margin: 0;
         font-family: 'Quicksand', sans-serif;
       }
@@ -70,14 +72,18 @@
         margin-bottom: 20px;
       }
 
+      .main-container{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
       .input-container{
         margin-left: 20px;
         width: 50px;
       }
 
       .graphic{
-        position: relative;
-        padding-left: 420px;
+        text-align: center;
       }
 
       .headings1{
@@ -125,4 +131,66 @@
         color: #ffffff;
         text-align: right;
         /* padding: 10px; */
+      }
+
+      .footer a {
+        margin-right: 10px;
+        
+      }
+
+      .mobile-menu {
+        background-color: var(--white);
+        padding: 24px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+      }
+      .mobile-menu a {
+        text-decoration: none;
+        color: var(--black);
+        font-weight: bold;
+        /* margin-bottom: 24px; */
+        /* background-color: #050573; */
+      }
+      .mobile-menu ul {
+        padding: 0;
+        /* margin: 24px 0 0; */
+        list-style: none;
+        
+      }
+      /* .mobile-menu ul:nth-child(1) {
+        border-bottom: 1px solid var(--very-light-pink);
+      } */
+      .mobile-menu ul li {
+        margin-bottom: 24px;
+      }
+
+      @media (max-width: 640px) {
+        .menu {
+          display: block;
+        }
+        .navbar-left ul {
+          display: none;
+        }
+        .desktop-menu {
+          display: none;
+        }
+        .main-container{
+          width: 100%;
+        }
+        .graphic{
+          max-width: 100%;
+          padding: 0;
+        }
+        .main-image{
+          max-width: 100%;
+        }
+
+      }
+
+      @media (min-width: 641px){
+        .mobile-menu{
+            display: none;
+        }
       }

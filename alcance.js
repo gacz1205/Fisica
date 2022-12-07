@@ -96,6 +96,19 @@ function printResults(distT, timeA ,timeB , adTime, veloA, veloB){
     
 }
 
+// TOOGLE MOBILE MENU
+
+const menuMobileIcon = document.querySelector('.menu');
+
+menuMobileIcon.addEventListener('click', toogleMobileMenu)
+
+const mobileMenu = document.querySelector('.mobile-menu');
+
+function toogleMobileMenu (){
+    mobileMenu.classList.toggle('inactive');
+}
+
+
 // function clearWorkSpace()
 // {
 //     data.innerHTML ="";
